@@ -39,8 +39,6 @@ pipeline {
                 }
             }
         }
-        
-        
         stage("Docker Image Build") {
             steps {
                 script {
@@ -52,8 +50,6 @@ pipeline {
                 }
             }
         }
-       
-
         stage("ECR Image Pushing") {
             steps {
                 script {
